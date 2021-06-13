@@ -22,6 +22,85 @@ a{
     text-decoration: none;
 }
 
+footer{
+    background-color: #393945;    
+}
+
+#topbar{
+    width:100%;    
+    position: fixed;
+    display: none;
+    box-shadow: 5px 0 10px #0002;
+    pointer-events: none;
+}    
+
+#topbar #wrappermenu{
+    display: flex;
+    height: 100px;
+    background-color: white;
+
+}
+
+#topbar #Titulo{
+    height:100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#topbar #Titulo img{
+    width: 6em;
+}
+
+#topbar #menu{
+    margin: auto 20px auto auto;
+    padding:35px;
+
+    pointer-events: auto;
+}
+
+#topbar #menu img{
+    height:30px;
+}
+
+#topbar #Titulo h1{
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+#topbar #links{
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: auto;
+    text-align: center;
+
+    transition: max-height 900ms ease;
+}
+
+#topbar:hover #links{
+    max-height: 500px;
+}
+
+#topbar #links li{
+    padding: 10px 0;
+    background-color: white 
+}
+
+#topbar #links li:hover{
+    background-color: #a19c9c;
+}
+
+#topbar #links li a{   
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#393945
+}
+
+#topbar #links li:hover a{
+    color: white;
+}
 #sidebar{
     width: 20em;
     height: 100vh;
@@ -31,48 +110,48 @@ a{
     position: fixed;
 }
 
-#Titulo{
+#sidebar #Titulo{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
 
-#Titulo img{
+#sidebar #Titulo img{
     width: 8em;
 }
 
-#Titulo h1{
+#sidebar #Titulo h1{
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     font-size: 2em;
 }
 
-#Titulo p{
+#sidebar #Titulo p{
     font-style: italic;
     max-width: 10em;
     font-size: 1.2em;
     text-align: center;
 }
 
-#links{
+#sidebar #links{
     margin-top: auto;
     margin-bottom: 80px;
     text-align: center;
 }
 
-#links li{
+#sidebar #links li{
     margin: 0.7em 0;
 }
 
-#links li a{
+#sidebar #links li a{
     letter-spacing: 1.2px;
     text-transform: uppercase;
     font-weight: 400;
     color:#393945
 }
 
-#links li a:hover{
+#sidebar #links li a:hover{
     color: #666666;
 }
 
@@ -81,15 +160,28 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
+    background-position: center;
 }
 
 #post1{
-    padding: 5em 10em;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 5em;
 }
 
 #post1 p{
     margin-bottom: 0.7em;
     font-size: 1.2em;
+}
+
+#rodape{
+    width:100%;
+    height: 50px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
 }
 
 .linkativo{
@@ -101,6 +193,25 @@ a{
     background-color: black;
     height: 1px;
     width: 87%;
-    margin: 5em;
+    max-width:1100px;
+    margin: auto;
     
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:1100px){
+    #sidebar{
+        display:none;
+    }
+    main{
+        padding: 0;
+        padding-top: 100px;
+    }
+    #fotoback{
+        height: 60vh;
+    }
+    #topbar{
+        display: block;
+    }
 }
