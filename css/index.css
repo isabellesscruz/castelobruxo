@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d9d9d9;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    padding-left:20em;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#sidebar{
+    width: 20em;
+    height: 100vh;
+    background-color: rgb(246, 250, 236);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+#Titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#Titulo img{
+    width: 8em;
+}
+
+#Titulo h1{
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#Titulo p{
+    font-style: italic;
+    max-width: 10em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#links{
+    margin-top: auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+#links li{
+    margin: 0.7em 0;
+}
+
+#links li a{
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#393945
+}
+
+#links li a:hover{
+    color: #666666;
+}
+
+#fotoback{
+    background: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+#post1{
+    padding: 5em 10em;
+}
+
+#post1 p{
+    margin-bottom: 0.7em;
+    font-size: 1.2em;
+}
+
+.linkativo{
+    color: rgb(26, 23, 23) !important;
+    font-weight: 700 !important;
+}
+
+.linehorizontal{
+    background-color: black;
+    height: 1px;
+    width: 87%;
+    margin: 5em;
+    
+}
